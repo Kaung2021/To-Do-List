@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=M+PLUS+1&family=Montagu+Slab&family=Open+Sans&family=Poppins:wght@300&family=Raleway:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    margin: auto;
+    max-width: 600px;
+    background-color: #1C2833;
+}
+
+.toDoBlock {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    margin-top: 60px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 0px black;
+}
+
+.titleHolder h1 {
+    text-transform: uppercase;
+    color: whitesmoke;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.listHolder {
+    height: 400px;
+    overflow: scroll;
+}
+
+ul.lists {
+    padding: 20px;
+    counter-increment: step-counter;
+    position: relative;
+}
+
+.lists li {
+    list-style-type: disc;
+    color: rgb(12, 165, 106);
+    font-size: 18px;
+    padding: 20px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.listIcon {
+    float: right;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.listIcon button {
+    color: whitesmoke;
+    background-color: rgb(15, 192, 124);
+    border: none;
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 50%;
+    pointer-events: none;
+    transition: 0.2s ease-in-out;
+}
+
+.listIcon:hover button {
+    background-color: #E81010;
+    opacity: 100%;
+}
+
+
+/*Style to input form*/
+
+input#addInput {
+    padding: 8px 80px;
+    float: left;
+    outline: none;
+    border: none;
+    margin: 5px;
+}
+
+button#addBtn {
+    float: left;
+    padding: 5px 12px;
+    color: whitesmoke;
+    background-color: rgb(15, 192, 124);
+    border: none;
+    border-radius: 3px;
+    margin: 7px;
+    cursor: pointer;
+}
+
+button#removeBtn {
+    padding: 5px 12px;
+    color: whitesmoke;
+    background-color: rgb(15, 192, 124);
+    border: none;
+    border-radius: 3px;
+    margin: 7px;
+    cursor: pointer;
+}
+
+button#addBtn:hover {
+    background-color: rgb(10, 161, 103);
+}
+
+button#removeBtn:hover {
+    background-color: rgb(10, 161, 103);
+}
+
+
+/*Style to scroll bar*/
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 30%;
+    background-color: rgb(15, 192, 124);
+}
+
+
+/*adding style for Javascript*/
+
+.rBox {
+    height: 0;
+}
+
+.falling {
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
